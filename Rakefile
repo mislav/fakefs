@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/lib'
+
 desc "Run tests"
 task :test do
   Dir['test/**/*_test.rb'].each { |file| require file }
@@ -8,7 +10,6 @@ task :default => :test
 begin
   require 'jeweler'
 
-  $LOAD_PATH.unshift File.dirname(__FILE__) + '/lib'
   require 'fakefs/version'
 
   Jeweler::Tasks.new do |gemspec|
