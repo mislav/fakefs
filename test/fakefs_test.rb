@@ -1,3 +1,4 @@
+require 'stringio'
 require 'fakefs'
 require 'test/unit'
 

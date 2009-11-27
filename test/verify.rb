@@ -3,6 +3,7 @@
 # USAGE
 #
 #   $ ruby test/verify.rb | grep "not implemented"
+require 'stringio'
 require 'fakefs'
 require 'test/unit'
 
